@@ -6,6 +6,7 @@
 #include "Day1.h"
 #include "Day2.h"
 #include "Day3.h"
+#include "Day4.h"
 
 
 int main()
@@ -26,7 +27,16 @@ int main()
     std::cout << "Time spent: " << chrono::duration_cast<chrono::microseconds>(stop - start).count() ;
 
     std::cout << "part 2: " << d3.FindClosestByStep() << endl;
+
+
+    Day4 d4;
+    std::cout << "Day 4 result: Part 1:" << d4.PossiblePasswordCount() << " Part 2: " << d4.ProperPasswordCount() << endl; //<< " Part2: " << d2.FindVerbNoun() << endl;
+
+
 }
+
+    
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
